@@ -15,6 +15,7 @@
    limitations under the License.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.LinkRewriterPlugin = void 0;
 const tslib_1 = require("tslib");
 const path = tslib_1.__importStar(require("path"));
 const marked = tslib_1.__importStar(require("marked"));

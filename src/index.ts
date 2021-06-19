@@ -15,11 +15,11 @@
 */
 
 import "source-map-support/register";
-import { ParameterType, PluginHost } from 'typedoc/dist/lib/utils';
+import { ParameterType } from 'typedoc/dist/lib/utils';
 import { LinkRewriterPlugin } from "./plugin";
+import { Application } from 'typedoc';
 
-function load(host: PluginHost) {
-    const app = host.owner;
+function load(app:Application) {
     if (app.renderer.hasComponent("linkrewriter")) {
         return;
     }
@@ -33,4 +33,4 @@ function load(host: PluginHost) {
     app.renderer.addComponent("linkrewriter", new LinkRewriterPlugin(app.renderer));
 }
 
-export = load;
+export { load };

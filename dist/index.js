@@ -14,11 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.load = void 0;
 require("source-map-support/register");
 const utils_1 = require("typedoc/dist/lib/utils");
 const plugin_1 = require("./plugin");
-function load(host) {
-    const app = host.owner;
+function load(app) {
     if (app.renderer.hasComponent("linkrewriter")) {
         return;
     }
@@ -29,5 +30,5 @@ function load(host) {
     });
     app.renderer.addComponent("linkrewriter", new plugin_1.LinkRewriterPlugin(app.renderer));
 }
-module.exports = load;
+exports.load = load;
 //# sourceMappingURL=index.js.map

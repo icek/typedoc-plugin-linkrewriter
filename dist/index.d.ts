@@ -14,6 +14,6 @@
    limitations under the License.
 */
 import "source-map-support/register";
-import { PluginHost } from 'typedoc/dist/lib/utils';
-declare function load(host: PluginHost): void;
-export = load;
+import { Application } from 'typedoc';
+declare function load(app: Application): void;
+export { load };

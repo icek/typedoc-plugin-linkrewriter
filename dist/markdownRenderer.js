@@ -15,6 +15,7 @@
    limitations under the License.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MarkdownRenderer = void 0;
 const fence = "```";
 const tick = "`";
 class MarkdownRenderer {
