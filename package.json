@@ -1,6 +1,6 @@
 {
   "name": "typedoc-plugin-linkrewriter",
-  "version": "0.2.0",
+  "version": "0.21.0",
   "description": "A TypeDoc plugin for rewriting links in markdown",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
