@@ -15,5 +15,4 @@
 */
 import "source-map-support/register";
 import { Application } from 'typedoc';
-declare function load(app: Application): void;
-export { load };
+export declare function load(app: Application): void;

@@ -19,7 +19,7 @@ import { ParameterType } from 'typedoc/dist/lib/utils';
 import { LinkRewriterPlugin } from "./plugin";
 import { Application } from 'typedoc';
 
-function load(app:Application) {
+export function load(app:Application) {
     if (app.renderer.hasComponent("linkrewriter")) {
         return;
     }
@@ -32,5 +32,3 @@ function load(app:Application) {
 
     app.renderer.addComponent("linkrewriter", new LinkRewriterPlugin(app.renderer));
 }
-
-export { load };
